@@ -1,4 +1,3 @@
-import { Demo } from "./oop/abstraction";
 import { AccountDemo } from "./oop/encapsulation";
 import { AnimalDemo } from "./oop/inheritance";
 
