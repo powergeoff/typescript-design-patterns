@@ -1,4 +1,6 @@
 //a class has only one instance during app lifetime while providing global access to it
+
+//why singleton? passing instances UNCHANGED to deeply nested componenets
 export class Singleton {
   //static - no new keyword
   private static _instance: Singleton;
@@ -10,7 +12,7 @@ export class Singleton {
     if (!Singleton._instance) {
       Singleton._instance = new Singleton();
     }
-    return Singleton._instance;
+    return this._instance;
   }
 
   set myValue(value: number) {
